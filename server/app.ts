@@ -9,10 +9,10 @@ dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
 import cors from "cors";
 
-app.use(cors());
-
 const app = express(); //step-two: active express and put in a container called app
 dotenv.config();
+
+app.use(cors());
 
 const port = 2100; // step-three: Define the port number for the server. dont use this same port number on your laptop.
 
